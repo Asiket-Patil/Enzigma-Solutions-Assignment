@@ -7,7 +7,7 @@ const Table = ({ todos, onDelete, onDone }) => {
         <table className='table border border-orange-500 text-white w-full text-center'>
           <thead>
             <tr className='text-orange-500 font-bold text-lg'>
-              <th className='text-center'>Index</th> {/* For display */}
+              <th className='text-center'>Index</th> 
               <th className='text-center'>Title</th>
               <th className='text-center'>Description</th>
               <th className='text-center'>Date</th>
@@ -23,7 +23,7 @@ const Table = ({ todos, onDelete, onDone }) => {
             ) : (
               todos.map((todo, index) => (
                 <tr key={todo.id}>
-                  <td className='text-center'>{index + 1}</td> {/* Display sequential number */}
+                  <td className='text-center'>{index + 1}</td>
                   <td className='text-center'>{todo.title}</td>
                   <td className='text-center'>{todo.desc}</td>
                   <td className='text-center'>{todo.date}</td>

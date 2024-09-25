@@ -8,7 +8,7 @@ const App = () => {
 
   const addNewTodo = (title, date, desc) => {
     const newTodo = {
-      id: Date.now(),  // Unique ID for internal logic
+      id: Date.now(),
       title,
       date,
       desc,
